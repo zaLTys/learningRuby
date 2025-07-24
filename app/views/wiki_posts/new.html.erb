@@ -1,6 +1,6 @@
 <h1>New wiki post</h1>
 
-<%= form_with model: @wiki_post, local: true do |form| %>
+<%= form_with(model: @wiki_post, local: true, html: { multipart: true }) do |form| %>
 
   <div>
     <%= form.label :title %><br>
@@ -9,6 +9,8 @@
     <%= form.text_field :description %>
     <%= form.label :author %>
     <%= form.text_field :author %>
+    <%= form.label :image %>
+    <%= form.file_field :image %>
   </div>
 
   <div>
