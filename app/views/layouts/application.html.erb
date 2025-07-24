@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+  <%= javascript_importmap_tags%>
+  <%= turbo_include_tags %>
   <head>
     <title><%= content_for(:title) || "Wiki App" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
